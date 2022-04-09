@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+
+ /* ** Navbar */
+
+
+#navbar{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 20fr 1fr 1fr 1fr ;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "a s . g i m r";
+    justify-items: center;
+    align-items: center;
+}
+
+#navbar a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial,sans-serif; 
+    color: #bdc1c6;
+    
+
+}
+
+
+#About{
+   grid-area: a;
+   
+}
+#Store{
+    grid-area: s;
+}
+#Gmail{
+    grid-area: g;
+}
+#Images{
+   grid-area: i;
+}
+#Menu{
+    grid-area: m;
+}
+#Register{
+   grid-area: r;
+}
+
