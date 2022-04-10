@@ -48,3 +48,63 @@ html{
    grid-area: r;
 }
 
+/* ** Main Section ** */ 
+
+main{ 
+    height: 90vh;
+    width: auto;
+}
+
+main#main-section{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas:
+    ". logo ." 
+    ". search ."
+    ". btn .";
+
+    justify-content: center;
+    align-content: center;
+}
+
+#logo{
+    height: 50px;
+    grid-area: logo;
+    align-self: end;
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+}
+#search{
+    grid-area: search;
+    align-self: center;
+    padding: 15px;
+}
+#btn{
+    padding: 0;
+    margin: 0;
+    grid-area: btn;
+    align-self: start; 
+   
+    
+}
+
+#main-section #btn {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    ". g r .";
+}
+
+#btn-google-search{
+    grid-area: g;
+    padding: 10px;
+}
+
+#btn-random{
+    grid-area: r;
+    padding: 10px;
+}
+
