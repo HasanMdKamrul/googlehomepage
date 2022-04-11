@@ -1,6 +1,7 @@
 html{
     height: 100%;
     width: 100%;
+   
 }
 
 
@@ -76,7 +77,7 @@ main#main-section{
     ". . .";
 
     justify-content: center;
-    align-content: start;
+    align-content: center;
 }
 
 #logo{
@@ -88,20 +89,43 @@ main#main-section{
     padding: 10px;
     margin: 0;
 }
-#search{
+#main-form-form{
     grid-area: search;
-    align-self: center;
+    display: grid;
+    grid-template-columns: 15px 15px 0px 1fr;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    ". .  svg sr";
+    align-items: center;
+
+}
+
+#search{
+    grid-area: sr;
     padding: 15px;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
+    align-self: center;
+   
+    
+   
 }
+
+#svg{ 
+    grid-area: svg;
+    position: relative;
+    align-self: center;
+}
+
+
+
+
 #btn{
     padding: 0;
     margin: 0;
     grid-area: btn;
     align-self: start; 
    
-    
 }
 
 #main-section #btn {
@@ -116,11 +140,13 @@ main#main-section{
 #btn-google-search{
     grid-area: g;
     padding: 10px;
+    
 }
 
 #btn-random{
     grid-area: r;
     padding: 10px;
+    
 }
 
 
@@ -134,6 +160,7 @@ main#main-section{
     "a b h . p t s";
     position: absolute;
     bottom: 0;
+    margin-bottom: 10px;
    
    
 }
